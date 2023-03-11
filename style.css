@@ -1,6 +1,15 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 
 /*
 BARVY:
@@ -14,3 +23,77 @@ tlačítko Facebook:				 #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
 
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  background-color: #b2bec3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  width: 550px;
+  background-color: #ffffff;
+  margin: 150px auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px -6px #777676;
+  padding: 30px;
+  position: relative;
+}
+
+.card__photo {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 150px;
+  position: absolute;
+  right: calc(-150px / 2);
+  top: calc(-150px / 2);
+}
+
+.card__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #d63031;
+  margin-bottom: 30px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.card__link {
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.card__link--twitter {
+  background-color: #1da1f2;
+}
+
+.card__link--twitter:hover {
+  background-color: #0b7bc1;
+}
+
+.card__link--facebook {
+  background-color: #3b5998;
+}
+
+.card__link--facebook:hover {
+  background-color: #2b406e;
+}

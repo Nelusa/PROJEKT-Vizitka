@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Vizitka Elišky Veselé</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vizitka Elišky Veselé</title>
+    <link rel="stylesheet" href="style.css" />
 
-	<img src="images/foto.jpg" alt="Eliška Veselá">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <img class="card__photo" src="images/foto.jpg" alt="Eliška Veselá" />
 
-	<h1>Eliška Veselá</h1>
+      <h1 class="card__title">Eliška Veselá</h1>
+      <div class="card__content">
+        <p class="card__text">
+          Pracuje jako programátorka a učí neuronové sítě rozpoznávat obličeje a
+          předměty. Vystudovala ČVUT v Praze a ve 26 letech založila startup,
+          kterým dnes úspěšně válcuje velké americké firmy.
+        </p>
 
-	<p>Pracuje jako programátorka a učí neuronové sítě rozpoznávat obličeje a předměty. Vystudovala ČVUT v Praze a v 26 letech založila startup, kterým dnes úspěšně válcuje velké americké firmy.</p>
-
-	<p>I přes velké pracovní nasazení si každý den najde čas na svou dceru a dva psy. Ráda jezdí na koni, plave a chodí po horách. Její vysněná dovolená je strávit půl roku v kanadské divočině.</p>
-
-	<a href="https://twitter.com/">Twitter</a>
-	<a href="https://www.facebook.com/">Facebook</a>
-
-</body>
+        <p class="card__text">
+          I přes velké pracovní nasazení si každý den najde čas na svou dceru a
+          dva psy. Ráda jezdí na koni, plave a chodí po horách. Její vysněná
+          dovolená je strávit půl roku v kanadské divočině.
+        </p>
+      </div>
+      <div class="card__buttons">
+        <a class="card__link card__link--twitter" href="https://twitter.com/"
+          >Twitter</a
+        >
+        <a
+          class="card__link card__link--facebook"
+          href="https://www.facebook.com/"
+          >Facebook</a
+        >
+      </div>
+    </div>
+  </body>
 </html>
